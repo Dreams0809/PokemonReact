@@ -1,25 +1,47 @@
-import logo from './logo.svg';
-import './App.css';
+import React from "react"
+import Cards from "./components/Cards"
+import './components/css/App.css'
 
-function App() {
-  return (
-    <div className="App">
-      <header className="App-header">
-        <img src={logo} className="App-logo" alt="logo" />
-        <p>
-          Edit <code>src/App.js</code> and save to reload.
-        </p>
-        <a
-          className="App-link"
-          href="https://reactjs.org"
-          target="_blank"
-          rel="noopener noreferrer"
-        >
-          Learn React
-        </a>
-      </header>
-    </div>
-  );
+export default function App(){
+    return(
+        <div className="pokemons">
+            <Cards
+            
+            // name="Charmander"
+            // img = "./photos/charmander.png"
+            // attack="89"
+            // defense="54"
+            // type="fire" 
+            />
+          
+
+            <Cards 
+            // name="Treecko"
+            // img = "./photos/treecko.png"
+            // attack="89"
+            // defense="54"
+            // type="grass"
+            />
+
+            <Cards 
+            // name="Piplup"
+            // img = "./photos/piplup.png"
+            // attack="89"
+            // defense="54"
+            // type="water"
+            />
+
+            <Cards 
+            // name="Gengar"
+            // img = "./photos/gengar.png"
+            // attack="89"
+            // defense="54"
+            // type="ghost"
+
+            />
+
+
+        
+        </div>
+    )
 }
-
-export default App;
