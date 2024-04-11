@@ -6,7 +6,7 @@ import './css/Cards.css'
 export default function Cards (props){
     return(
         <div className='pokemon-card'>
-            <img src={`../public/photos/${props.img}`}/>
+            <img src={`/photos/${props.img}`}/>
             <h3> {props.name}</h3>
             <div className='pokemon-info'>
                 <p> Attack: {props.attack} </p> 

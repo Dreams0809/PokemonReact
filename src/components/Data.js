@@ -12,7 +12,7 @@ export default [
         coverImg: "treecko.png",
         attack: 99,
         defense: 54,
-        type: "fire", 
+        type: "grass", 
     },
 
     {
@@ -30,6 +30,15 @@ export default [
         defense: 54,
         type: "ghost", 
     },
+
+    {
+        pokemon: "Charizard",
+        coverImg: "gengar.png",
+        attack: 99,
+        defense: 54,
+        type: "ghost", 
+    },
+
 
     
 

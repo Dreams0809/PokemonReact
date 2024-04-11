@@ -4,23 +4,23 @@ import './components/css/App.css'
 import Data from "./components/Data"
 
 export default function App(){
-    const  Pokemon = Data.map( id => {
+    const  Pokemon = Data.map( info => {
         return (
             <Cards
-            name= {id.pokemon}
-            img = {id.coverImg }
-            attack= {id.attack}
-            defense= {id.defense}
-            type= {id.type} 
+            name= {info.pokemon}
+            img = {info.coverImg }
+            attack= {info.attack}
+            defense= {info.defense}
+            type= {info.type} 
             /> 
         )
     })
 
     return(
-        <div className="pokemons">
-            
-            { Pokemon}
-
+        <div>
+            <div className="pokemons">
+                { Pokemon}
+            </div>
 
         
         </div>
