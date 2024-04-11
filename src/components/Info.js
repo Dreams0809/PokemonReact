@@ -5,7 +5,7 @@ export default function Info(props) {
     return (
         <div>
             <h3> {props.name}</h3>
-            <h3> Deez nuts</h3>
+            <h3> Name</h3>
             <div className='pokemon-info'>
                 <h3> Attack: {props.attack} </h3>
                 
