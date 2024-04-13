@@ -4,6 +4,10 @@ import './components/css/App.css'
 import Data from "./components/Data"
 
 export default function App(){
+
+
+
+
     const  Pokemon = Data.map( info => {
         return (
             <Cards
@@ -16,10 +20,14 @@ export default function App(){
         )
     })
 
+  
+    
+
     return(
         <div>
             <div className="pokemons">
                 { Pokemon}
+                
             </div>
 
         
