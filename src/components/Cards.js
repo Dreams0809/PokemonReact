@@ -7,14 +7,15 @@ import Data from './Data'
 
 export default function Cards (props){
     
-    let description
+     const description = [Data.pokemonData.id.description]
 
-    function getDescription(){
-        const dataDescription = Data.pokemonData.id.description
-        description = dataDescription
+     const descriptionElement = description.map(x => <p key={x}> {x} </p>)
+    
+    function addDescription(){
+        description.push(descriptionElement)
         console.log(description)
     }
-    
+   
     
     return(
 
@@ -30,7 +31,8 @@ export default function Cards (props){
             <div className='pokemon-info'>
                 <p> Type: {props.type}</p>
             </div>
-            <button onClick={getDescription}> Click Me</button> 
+            {descriptionElement} 
+            <button onClick={addDescription}> Click Me</button> 
         </div>
     )
 }

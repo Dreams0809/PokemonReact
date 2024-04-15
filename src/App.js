@@ -20,6 +20,8 @@ export default function App(){
         )
     })
 
+
+
   
     
 
@@ -27,6 +29,7 @@ export default function App(){
         <div>
             <div className="pokemons">
                 { Pokemon}
+                
                 
             </div>
 
