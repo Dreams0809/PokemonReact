@@ -8,7 +8,7 @@ export default function App(){
 
 
 
-    const  Pokemon = Data.map( info => {
+    const  Pokemon = Data.pokemonData.id.map( info => {
         return (
             <Cards
             name= {info.pokemon}

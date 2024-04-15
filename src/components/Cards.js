@@ -1,19 +1,19 @@
 import React from 'react'
 import './css/Cards.css'
-// import Data from './Data'
+import Data from './Data'
 
 
 
 
 export default function Cards (props){
     
-    // let description
+    let description
 
-    // function getDescription(){
-    //     const dataDescription = Data.pokemonData.idid.description
-    //     description = dataDescription
-    //     console.log(description)
-    // }
+    function getDescription(){
+        const dataDescription = Data.pokemonData.id.description
+        description = dataDescription
+        console.log(description)
+    }
     
     
     return(
@@ -30,7 +30,7 @@ export default function Cards (props){
             <div className='pokemon-info'>
                 <p> Type: {props.type}</p>
             </div>
-            {/* <button onClick={getDescription}> Click Me</button>  */}
+            <button onClick={getDescription}> Click Me</button> 
         </div>
     )
 }
