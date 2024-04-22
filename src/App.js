@@ -5,9 +5,6 @@ import Data from "./components/Data"
 
 export default function App(){
 
-
-
-
     const  Pokemon = Data.pokemonData.id.map( info => {
         return (
             <Cards
@@ -21,19 +18,11 @@ export default function App(){
     })
 
 
-
-  
-    
-
     return(
         <div>
             <div className="pokemons">
-                { Pokemon}
-                
-                
-            </div>
-
-        
+                { Pokemon}                
+            </div>        
         </div>
     )
 }

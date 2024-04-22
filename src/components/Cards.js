@@ -7,9 +7,8 @@ import Data from './Data'
 
 export default function Cards (props){
     
-     const description = [Data.pokemonData.id.description]
-
-     const descriptionElement = description.map(x => <p key={x}> {x} </p>)
+     const description = Data.pokemonData.id.description
+     const descriptionElement = description.map(x => <p key={x.description}> {x} </p>)
     
     function addDescription(){
         description.push(descriptionElement)
