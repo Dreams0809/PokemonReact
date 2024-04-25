@@ -1,7 +1,5 @@
 export default {
-    
     "pokemonData":{
-    
         "id": [
         {
             pokemon: "Charmander",

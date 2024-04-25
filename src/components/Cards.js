@@ -8,11 +8,11 @@ import Data from './Data'
 
 export default function Cards (props){
     
-    const [description , setDescription] = React.useState("yes")
+    const [descriptionText, setDescriptionText] = React.useState("")
     
-    function handleClick(){
-        // return setDescription("No")
-        return (Data.pokemonData.id.description)
+    function getDescription(){
+        const descriptionArray = Data.pokemonData.id
+        setDescriptionText(descriptionArray.description)
     }
     
     return(
@@ -30,7 +30,8 @@ export default function Cards (props){
                 <p> Type: {props.type}</p>
             </div>
             {/* {description} */}
-            <button onClick={handleClick}> {description}  </button> 
+            <button onClick={getDescription}>   </button> 
+            <h1> {descriptionText}</h1>
         </div>
     )
 }
