@@ -11,7 +11,6 @@ export default function Cards (props){
     const [descriptionText, setDescriptionText] = React.useState("")
     
     function getDescription(){
-        const descriptionArray = Data.pokemonData.id
         setDescriptionText(props.description)
     }
     
