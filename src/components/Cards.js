@@ -5,16 +5,15 @@ import Data from './Data'
 
 
 
+
 export default function Cards (props){
     
-     const description = Data.pokemonData.id.description
-     const descriptionElement = description.map(x => <p key={x.description}> {x} </p>)
+    const [description , setDescription] = React.useState("yes")
     
-    function addDescription(){
-        description.push(descriptionElement)
-        console.log(description)
+    function handleClick(){
+        // return setDescription("No")
+        return (Data.pokemonData.id.description)
     }
-   
     
     return(
 
@@ -30,8 +29,8 @@ export default function Cards (props){
             <div className='pokemon-info'>
                 <p> Type: {props.type}</p>
             </div>
-            {descriptionElement} 
-            <button onClick={addDescription}> Click Me</button> 
+            {/* {description} */}
+            <button onClick={handleClick}> {description}  </button> 
         </div>
     )
 }
