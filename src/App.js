@@ -13,7 +13,7 @@ export default function App(){
             attack= {info.attack}
             defense= {info.defense}
             type= {info.type} 
-            // description= {info.description}
+            description= {info.description}
             /> 
         )
     })
