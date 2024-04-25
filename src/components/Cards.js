@@ -12,7 +12,7 @@ export default function Cards (props){
     
     function getDescription(){
         const descriptionArray = Data.pokemonData.id
-        setDescriptionText(descriptionArray.description)
+        setDescriptionText(props.description)
     }
     
     return(
