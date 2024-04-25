@@ -15,7 +15,7 @@ export default {
         },
         {
         pokemon: "Bulbasour",
-            coverImg: "bulbasaour.png",
+            coverImg: "bulbasour.png",
             attack: 99,
             defense: 54,
             type: "grass", 
