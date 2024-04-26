@@ -12,7 +12,22 @@ export default function Cards (props){
     
     function getDescription(){
         setDescriptionText(props.description)
-    }
+    } 
+    
+
+    let pokemonType = props.isGrass === true ? "Grass" : "No"
+    // if( props.isGrass){
+    //     return grass
+    // } else if (props.isFire){
+    //     return fire
+    // } else if (props.isWater){
+    //     return Water
+    // } else if(props.isGhost){
+    //     return isGhost
+    // } else(){
+    //     return props.pokemon
+    // }
+
     
     return(
 
@@ -26,11 +41,12 @@ export default function Cards (props){
                 <p> Defense: {props.defense}</p>
             </div>
             <div className='pokemon-info'>
-                <p> Type: {props.type}</p>
+                {/* <p> Type: {props.type}</p> */}
+                <p> Type : {pokemonType} </p>
             </div>
             {/* {description} */}
-            <button onClick={getDescription}>   </button> 
-            <h1> {descriptionText}</h1>
+            <button onClick={getDescription}> Click Me  </button> 
+            <h1 className="description-text"> {descriptionText}</h1>
         </div>
     )
 }
