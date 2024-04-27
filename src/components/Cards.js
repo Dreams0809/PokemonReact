@@ -20,15 +20,14 @@ export default function Cards (props){
     
     return(
 
-        <div className={'pokemon-card'} >
-            <section className='pokemon-frame'>
+        <div className={'pokemon-card' + props.type}>
+            <section className={'pokemon-frame'}>
                 <img src={`/photos/${props.img}`}/>
             </section>
             <h3> {props.name}</h3>
             <div className='pokemon-info'>
                 <p> Attack: {props.attack} </p> 
             </div>
-            
             <div className='pokemon-info'>
                 <p> Defense: {props.defense}</p>
             </div>
