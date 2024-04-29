@@ -62,6 +62,7 @@ body {
     border: 1px solid #000;
     padding: 10px;
     object-fit: cover;
+    background: white;
     display: inline-block; /* Keeps the frame size according to the image */
     box-shadow: 0px 0px 10px 0px rgba(0,0,0,0.5);
 }
